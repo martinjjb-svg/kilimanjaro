@@ -17,5 +17,20 @@ def about():
 def training_target():
     return render_template("training_target.html")
 
+
+@app.route("/events")
+def events():
+    return render_template("events.html")
+
+
+@app.route("/calendar")
+def calendar():
+    return render_template("calendar.html")
+
+
+@app.route("/fund_raising")
+def fund_raising():
+    return render_template("fund_raising.html")
+
 if __name__ == '__main__':
     app.run()
