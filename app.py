@@ -29,6 +29,11 @@ def calendar():
     return render_template("calendar.html")
 
 
+@app.route("/auction")
+def auction():
+    return render_template("auction.html")
+
+
 @app.route("/fund_raising")
 def fund_raising():
     return render_template("fund_raising.html")
